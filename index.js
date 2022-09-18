@@ -23,7 +23,7 @@ const transferHalfAmount = async() => {
     // Get the current balance
     var fromBalance = await connection.getBalance(from.publicKey);
     console.log(parseInt(fromBalance/LAMPORTS_PER_SOL));
-    // Add 10 SOL if the current balance is empty
+    // Add 2 SOL if the current balance is empty
     if (parseInt(fromBalance) == 0) {
         // Aidrop 2 SOL to Sender wallet
         console.log("Empty wallet is detected. Airdopping some SOL to Sender wallet!");
